@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Presupuesto</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Solicitar Presupuesto</h1>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="trabajos.html">Trabajos</a>
+        <a href="presupuesto.html">Solicitar Presupuesto</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<main>
+
+    <h2>Formulario de Solicitud</h2>
+
+    <p>
+        Rellene los siguientes datos para solicitar un presupuesto.
+    </p>
+
+    <form action="#" method="post">
+
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono">
+
+        <label for="tipoTrabajo">Tipo de trabajo</label>
+        <select id="tipoTrabajo" name="tipoTrabajo" required>
+            <option value="">Seleccione una opción</option>
+            <option value="reforma">Reforma Integral</option>
+            <option value="cocina">Reforma de Cocina</option>
+            <option value="bano">Reforma de Baño</option>
+            <option value="pintura">Pintura</option>
+            <option value="construccion">Construcción</option>
+            <option value="otro">Otro</option>
+        </select>
+
+        <label for="direccion">Dirección de la obra</label>
+        <input type="text" id="direccion" name="direccion">
+
+        <label for="descripcion">Descripción del proyecto</label>
+        <textarea
+            id="descripcion"
+            name="descripcion"
+            rows="6"
+            placeholder="Explique brevemente el trabajo que necesita..."
+            required>
+        </textarea>
+
+        <label for="fecha">Fecha aproximada de inicio</label>
+        <input type="date" id="fecha" name="fecha">
+
+        <label for="imagenes">Adjuntar imágenes (simulado)</label>
+        <input type="file" id="imagenes" name="imagenes" multiple>
+
+        <button type="submit">
+            Enviar Solicitud
+        </button>
+
+    </form>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Construcciones Pertegal</p>
+</footer>
+
+</body>
+</html>
